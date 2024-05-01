@@ -1,6 +1,10 @@
 {
   "item.magiccraft.tin": "Tin",
   "item.magiccraft.raw_tin": "Raw Tin",
-
+  "block.magiccraft.tin_block": "Tin Block",
+  "block.magiccraft.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.magiccraft.tin_stone": "Tin Stone",
+  "block.magiccraft.nether_tin_ore": "Nether Tin Ore",
+  "block.magiccraft.tin_ore": "Tin Ore",
   "itemGroup.magiccrafttab":"Magic Craft Mod Tab"
 }
