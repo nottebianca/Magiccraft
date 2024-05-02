@@ -1,6 +1,7 @@
 package net.bambuki.magiccraft.item;
 
 import net.bambuki.magiccraft.MagicCraft;
+import net.bambuki.magiccraft.item.custom.MagicBallItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +17,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAGICCRAFT_TAB)));
     public static final RegistryObject<Item> RAW_TIN = ITEMS.register("raw_tin",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAGICCRAFT_TAB)));
+    public static final RegistryObject<Item> MAGIC_BALL = ITEMS.register("magic_ball",
+            () -> new MagicBallItem(new Item.Properties().tab(ModCreativeModeTab.MAGICCRAFT_TAB).stacksTo(1)));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 
