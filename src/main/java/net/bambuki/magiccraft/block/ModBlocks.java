@@ -2,6 +2,7 @@ package net.bambuki.magiccraft.block;
 
 import net.bambuki.magiccraft.MagicCraft;
 import net.bambuki.magiccraft.block.custom.InvisibilityBlock;
+import net.bambuki.magiccraft.block.custom.TinLampBlock;
 import net.bambuki.magiccraft.item.ModCreativeModeTab;
 import net.bambuki.magiccraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -44,6 +45,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> INVISIBILITY_BLOCK = registerBlock("invisibility_block",
             () -> new InvisibilityBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MAGICCRAFT_TAB);
+    public static final RegistryObject<Block> TIN_LAMP = registerBlock("tin_lamp",
+            () -> new TinLampBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(TinLampBlock.LIT) ? 15 : 0)), ModCreativeModeTab.MAGICCRAFT_TAB);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
