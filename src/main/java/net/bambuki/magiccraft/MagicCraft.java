@@ -3,6 +3,8 @@ package net.bambuki.magiccraft;
 import com.mojang.logging.LogUtils;
 import net.bambuki.magiccraft.block.ModBlocks;
 import net.bambuki.magiccraft.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -60,12 +62,12 @@ public class MagicCraft
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
+        @SuppressWarnings("removal")
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.MANDRAGORA_CROP.get(), RenderType.cutout());
         }
     }
+
 }

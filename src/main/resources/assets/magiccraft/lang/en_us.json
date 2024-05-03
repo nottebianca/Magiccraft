@@ -2,6 +2,8 @@
   "item.magiccraft.tin": "Tin",
   "item.magiccraft.raw_tin": "Raw Tin",
   "item.magiccraft.magic_ball": "Magic Ball",
+  "item.magiccraft.mandragora": "Mandragora",
+  "item.magiccraft.mandragora_seeds": "Mandragora Seeds",
   "block.magiccraft.tin_block": "Tin Block",
   "block.magiccraft.deepslate_tin_ore": "Deepslate Tin Ore",
   "block.magiccraft.tin_stone": "Tin Stone",
@@ -9,5 +11,6 @@
   "block.magiccraft.tin_ore": "Tin Ore",
   "block.magiccraft.invisibility_block": "Invisibility Block",
   "block.magiccraft.tin_lamp": "Tin Lamp",
+  "block.magiccraft.mandragora_crop": "Mandragora Crop",
   "itemGroup.magiccrafttab":"Magic Craft Mod Tab"
 }
