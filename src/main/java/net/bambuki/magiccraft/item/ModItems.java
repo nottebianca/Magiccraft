@@ -27,9 +27,13 @@ public class ModItems {
     public static final RegistryObject<Item> MANDRAGORA_SEEDS = ITEMS.register("mandragora_seeds",
             () -> new ItemNameBlockItem(ModBlocks.MANDRAGORA_CROP.get(),
                     new Item.Properties().tab(ModCreativeModeTab.MAGICCRAFT_TAB)));
-    public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("mandragora",
+    public static final RegistryObject<Item> MANDRAGORA = ITEMS.register("mandragora",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAGICCRAFT_TAB)
-                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build())));
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2).effect(() -> new MobEffectInstance
+                                    (MobEffects.BLINDNESS, 200, 0), 1.0F).build())));
+
+
 
 
     public static void register(IEventBus eventBus) {
