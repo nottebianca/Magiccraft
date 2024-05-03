@@ -22,8 +22,6 @@ public class InvisibilityBlock extends Block {
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos blockPos, Player player,
                                  InteractionHand hand, BlockHitResult blockHitResult) {
-        // Server: Main Hand & Off Hand
-        // Client: Main Hand & Off Hand
 
         player.sendSystemMessage(Component.literal("Right Clicked this!"));
 
