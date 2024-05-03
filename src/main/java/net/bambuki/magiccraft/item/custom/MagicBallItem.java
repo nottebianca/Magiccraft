@@ -25,7 +25,7 @@ public class MagicBallItem extends Item {
         return super.use(level, player, hand);
     }
     private void outputRandomNumber(Player player){
-        player.sendSystemMessage(Component.literal("The magic ball give you a number:" + getRandomNumber()));
+        player.sendSystemMessage(Component.literal("The magic ball gave you a number: " + getRandomNumber()));
     }
     private int getRandomNumber(){
         return RandomSource.createNewThreadLocalInstance().nextInt(10);

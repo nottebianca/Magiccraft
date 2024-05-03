@@ -1,6 +1,7 @@
 package net.bambuki.magiccraft.block;
 
 import net.bambuki.magiccraft.MagicCraft;
+import net.bambuki.magiccraft.block.custom.InvisibilityBlock;
 import net.bambuki.magiccraft.item.ModCreativeModeTab;
 import net.bambuki.magiccraft.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -40,6 +41,9 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops(),
                     UniformInt.of(3, 7)), ModCreativeModeTab.MAGICCRAFT_TAB);
+    public static final RegistryObject<Block> INVISIBILITY_BLOCK = registerBlock("invisibility_block",
+            () -> new InvisibilityBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.MAGICCRAFT_TAB);
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
