@@ -12,5 +12,6 @@
   "block.magiccraft.invisibility_block": "Invisibility Block",
   "block.magiccraft.tin_lamp": "Tin Lamp",
   "block.magiccraft.mandragora_crop": "Mandragora Crop",
-  "itemGroup.magiccrafttab":"Magic Craft Mod Tab"
+  "itemGroup.magiccrafttab":"Magic Craft Mod Tab",
+  "entity.minecraft.villager.invisibility_master": "Invisibility Master"
 }
