@@ -1,5 +1,6 @@
 package net.bambuki.magiccraft;
 
+import net.bambuki.magiccraft.block.ModBlocks;
 import net.bambuki.magiccraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +16,7 @@ public class MagicCraft implements ModInitializer {
 
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 	}
 }

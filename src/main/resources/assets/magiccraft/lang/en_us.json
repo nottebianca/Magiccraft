@@ -3,9 +3,18 @@
   "item.magiccraft.raw_blue_sapphires": "Raw Blue Sapphire",
   "item.magiccraft.raw_green_emeralds": "Raw Green Emerald",
   "item.magiccraft.raw_yellow_diamonds": "Raw Yellow Diamond",
-  "item.magiccraft.scarlet_rubies": "Scarlet ruby",
+  "item.magiccraft.scarlet_rubies": "Scarlet Ruby",
   "item.magiccraft.blue_sapphires": "Blue Sapphire",
   "item.magiccraft.green_emeralds": "Green Emerald",
   "item.magiccraft.yellow_diamonds": "Yellow Diamond",
+  "block.magiccraft.blue_sapphires_block": "Block of Blue Sapphire",
+  "block.magiccraft.scarlet_rubies_block": "Block of Scarlet Ruby",
+  "block.magiccraft.green_emeralds_block": "Block of Green Emerald",
+  "block.magiccraft.yellow_diamonds_block": "Block of Yellow Diamond",
+  "block.magiccraft.blue_sapphires_ore": "Blue Sapphire Ore",
+  "block.magiccraft.scarlet_rubies_ore": "Scarlet Ruby Ore",
+  "block.magiccraft.green_emeralds_ore": "Green Emerald Ore",
+  "block.magiccraft.yellow_diamonds_ore": "Yellow Diamond Ore",
+
   "itemGroup.magiccraft.blue_sapphires": "Magic Craft"
 }

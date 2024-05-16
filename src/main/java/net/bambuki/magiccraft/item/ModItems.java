@@ -3,7 +3,6 @@ package net.bambuki.magiccraft.item;
 import net.bambuki.magiccraft.MagicCraft;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
