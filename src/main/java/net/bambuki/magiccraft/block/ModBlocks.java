@@ -2,6 +2,7 @@ package net.bambuki.magiccraft.block;
 
 import net.bambuki.magiccraft.MagicCraft;
 import net.bambuki.magiccraft.MagicCraftClient;
+import net.bambuki.magiccraft.block.custom.InvisibilityBlock;
 import net.bambuki.magiccraft.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -36,6 +37,8 @@ public class ModBlocks {
     public static final Block YELLOW_DIAMONDS_ORE = registerBlock("yellow_diamonds_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3,7)), ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block INVISIBILITY_BLOCK = registerBlock("invisibility_block",
+            new InvisibilityBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool()),ModItemGroup.BLUE_SAPPHIRES);
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(MagicCraft.MOD_ID, name), block);
