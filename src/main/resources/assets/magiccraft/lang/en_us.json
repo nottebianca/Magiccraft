@@ -15,6 +15,10 @@
   "block.magiccraft.scarlet_rubies_ore": "Scarlet Ruby Ore",
   "block.magiccraft.green_emeralds_ore": "Green Emerald Ore",
   "block.magiccraft.yellow_diamonds_ore": "Yellow Diamond Ore",
+  "block.magiccraft.blue_sapphires_lamp": "Blue Sapphire Lamp",
+  "block.magiccraft.scarlet_rubies_lamp": "Scarlet Ruby Lamp",
+  "block.magiccraft.green_emeralds_lamp": "Green Emerald Lamp",
+  "block.magiccraft.yellow_diamonds_lamp": "Yellow Diamond Lamp",
   "block.magiccraft.invisibility_block": "Invisibility Block",
 
   "itemGroup.magiccraft.blue_sapphires": "Magic Craft"

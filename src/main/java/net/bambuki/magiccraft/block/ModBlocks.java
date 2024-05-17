@@ -3,6 +3,7 @@ package net.bambuki.magiccraft.block;
 import net.bambuki.magiccraft.MagicCraft;
 import net.bambuki.magiccraft.MagicCraftClient;
 import net.bambuki.magiccraft.block.custom.InvisibilityBlock;
+import net.bambuki.magiccraft.block.custom.ScarletRubiesLampBlock;
 import net.bambuki.magiccraft.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -39,6 +40,18 @@ public class ModBlocks {
                     UniformIntProvider.create(3,7)), ModItemGroup.BLUE_SAPPHIRES);
     public static final Block INVISIBILITY_BLOCK = registerBlock("invisibility_block",
             new InvisibilityBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool()),ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block SCARLET_RUBIES_LAMP = registerBlock("scarlet_rubies_lamp",
+            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block BLUE_SAPPHIRES_LAMP = registerBlock("blue_sapphires_lamp",
+            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block GREEN_EMERALDS_LAMP = registerBlock("green_emeralds_lamp",
+            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block YELLOW_DIAMONDS_LAMP = registerBlock("yellow_diamonds_lamp",
+            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(MagicCraft.MOD_ID, name), block);
