@@ -3,6 +3,8 @@ package net.bambuki.magiccraft;
 import net.bambuki.magiccraft.block.ModBlocks;
 import net.bambuki.magiccraft.item.ModItems;
 import net.bambuki.magiccraft.villager.ModVillagers;
+import net.bambuki.magiccraft.world.feature.ModConfiguredFeatures;
+import net.bambuki.magiccraft.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -12,17 +14,20 @@ import org.slf4j.LoggerFactory;
 
 public class MagicCraft implements ModInitializer {
 
+
 	public static final String MOD_ID = "magiccraft";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 
 	public void onInitialize() {
+		ModConfiguredFeatures.registerConfiguredFeatures();
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MANDRAGORA_CROP, RenderLayer.getCutout());
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
+		ModOreGeneration.generateOres();
 
 	}
 }
