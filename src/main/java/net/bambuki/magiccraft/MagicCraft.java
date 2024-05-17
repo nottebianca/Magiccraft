@@ -2,6 +2,7 @@ package net.bambuki.magiccraft;
 
 import net.bambuki.magiccraft.block.ModBlocks;
 import net.bambuki.magiccraft.item.ModItems;
+import net.bambuki.magiccraft.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -20,6 +21,8 @@ public class MagicCraft implements ModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MANDRAGORA_CROP, RenderLayer.getCutout());
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModVillagers.registerVillagers();
+		ModVillagers.registerTrades();
 
 	}
 }
