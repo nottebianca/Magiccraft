@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "magiccraft:blue_sapphires_block",
+    "magiccraft:blue_sapphires_ore",
+    "magiccraft:scarlet_rubies_block",
+    "magiccraft:scarlet_rubies_ore",
+    "magiccraft:yellow_diamonds_block",
+    "magiccraft:yellow_diamonds_ore",
+    "magiccraft:green_emeralds_block",
+    "magiccraft:green_emeralds_ore"
+  ]
+}
