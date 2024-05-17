@@ -2,12 +2,12 @@ package net.bambuki.magiccraft.block;
 
 import net.bambuki.magiccraft.MagicCraft;
 import net.bambuki.magiccraft.MagicCraftClient;
-import net.bambuki.magiccraft.block.custom.InvisibilityBlock;
-import net.bambuki.magiccraft.block.custom.ScarletRubiesLampBlock;
+import net.bambuki.magiccraft.block.custom.*;
 import net.bambuki.magiccraft.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
@@ -44,14 +44,19 @@ public class ModBlocks {
             new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
                     .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
     public static final Block BLUE_SAPPHIRES_LAMP = registerBlock("blue_sapphires_lamp",
-            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+            new BlueSappphiresLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
                     .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
     public static final Block GREEN_EMERALDS_LAMP = registerBlock("green_emeralds_lamp",
-            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+            new GreenEmeraldsLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
                     .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
     public static final Block YELLOW_DIAMONDS_LAMP = registerBlock("yellow_diamonds_lamp",
-            new ScarletRubiesLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+            new YellowDiamondsLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
                     .luminance(state -> state.get(ScarletRubiesLampBlock.LIT) ? 15 : 0)), ModItemGroup.BLUE_SAPPHIRES);
+    public static final Block MANDRAGORA_CROP = registerBlockWIthoutItem("mandragora_crop",
+            new MandragoraCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+    private static Block registerBlockWIthoutItem(String name, Block block){
+        return Registry.register(Registry.BLOCK, new Identifier(MagicCraft.MOD_ID, name), block);
+    }
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(MagicCraft.MOD_ID, name), block);

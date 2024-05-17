@@ -7,6 +7,10 @@
   "item.magiccraft.blue_sapphires": "Blue Sapphire",
   "item.magiccraft.green_emeralds": "Green Emerald",
   "item.magiccraft.yellow_diamonds": "Yellow Diamond",
+  "item.magiccraft.mandragora": "Mandragora",
+  "item.magiccraft.mandragora_seeds": "Mandragora Seeds",
+
+
   "block.magiccraft.blue_sapphires_block": "Block of Blue Sapphire",
   "block.magiccraft.scarlet_rubies_block": "Block of Scarlet Ruby",
   "block.magiccraft.green_emeralds_block": "Block of Green Emerald",
@@ -20,6 +24,7 @@
   "block.magiccraft.green_emeralds_lamp": "Green Emerald Lamp",
   "block.magiccraft.yellow_diamonds_lamp": "Yellow Diamond Lamp",
   "block.magiccraft.invisibility_block": "Invisibility Block",
+  "block.magiccraft.mandragora_crop": "Mandragora Crop",
 
   "itemGroup.magiccraft.blue_sapphires": "Magic Craft"
 }
